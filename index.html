@@ -54,7 +54,7 @@
           </ul>
         </address>
 
-        <button class="open-menu-btn" type="button">
+        <button class="open-menu-btn" type="button" data-action="open-menu">
           <svg
             class="icon"
             width="24"
@@ -73,7 +73,9 @@
         <div class="container">
           <h1 class="page-title">Effective Solutions for Your Business</h1>
 
-          <button class="button" type="button">Order Service</button>
+          <button class="button" type="button" data-action="open-modal">
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -565,9 +567,9 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop" data-backdrop>
       <div class="modal">
-        <button class="modal-close-btn" type="button">
+        <button class="modal-close-btn" type="button" data-action="close-modal">
           <svg class="icon" width="8" height="8">
             <use href="./images/icons.svg#cross"></use>
           </svg>
@@ -668,10 +670,15 @@
       </div>
     </div>
 
-    <div class="mobile-menu">
+    <div class="mobile-menu" data-menu>
       <div class="mobile-menu-container">
-        <button class="menu-close-btn" type="button">
-          <svg class="icon" width="8" height="8">
+        <button class="menu-close-btn" type="button" data-action="close-menu">
+          <svg
+            class="icon"
+            width="8"
+            height="8"
+            aria-label="Switcher mobile menu"
+          >
             <use href="./images/icons.svg#cross"></use>
           </svg>
         </button>
